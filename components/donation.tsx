@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { CreditCard, Building2, Smartphone, Copy } from 'lucide-react'
+import { toast } from "sonner";
 
 export function Donation() {
   const bankDetails = {
@@ -80,7 +81,8 @@ export function Donation() {
                 />
               </div>
 
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-lg py-3">
+              <Button className="w-full bg-green-600 hover:bg-green-700 text-lg py-3"
+              onClick={() => toast.info("This payment option is under construction.")} >
                 <CreditCard className="mr-2 h-5 w-5" />
                 Proceed to Payment
               </Button>

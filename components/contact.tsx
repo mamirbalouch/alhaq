@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react'
+import { toast } from "sonner";
 
 export function Contact() {
   return (
@@ -61,7 +62,8 @@ export function Contact() {
                 />
               </div>
 
-              <Button className="w-full bg-green-600 hover:bg-green-700">
+              <Button className="w-full bg-green-600 hover:bg-green-700"
+              onClick={() => toast.info("Send email option is under construction.")}>
                 Send Message
               </Button>
             </CardContent>
@@ -79,9 +81,9 @@ export function Contact() {
                   <div>
                     <h4 className="font-semibold text-lg">Address</h4>
                     <p className="text-gray-600">
-                      123 Foundation Street<br />
-                      Karachi, Sindh 75000<br />
-                      Pakistan
+                      Al-Haq Khidmat Foundation<br />
+                      Sector 5-G, Saeedabad, Baldia Town, Karachi,<br />
+                      Sindh, Pakistan
                     </p>
                   </div>
                 </div>
@@ -90,8 +92,8 @@ export function Contact() {
                   <Phone className="h-6 w-6 text-green-600 mt-1" />
                   <div>
                     <h4 className="font-semibold text-lg">Phone</h4>
-                    <p className="text-gray-600">+92 21 1234 5678</p>
-                    <p className="text-gray-600">+92 300 1234567 (WhatsApp)</p>
+                    <p className="text-gray-600">+92 313 2993929</p>
+                    <p className="text-gray-600">+92 313 2993929 (WhatsApp)</p>
                   </div>
                 </div>
 
@@ -99,8 +101,8 @@ export function Contact() {
                   <Mail className="h-6 w-6 text-green-600 mt-1" />
                   <div>
                     <h4 className="font-semibold text-lg">Email</h4>
-                    <p className="text-gray-600">info@alhaqkhidmat.org</p>
-                    <p className="text-gray-600">donations@alhaqkhidmat.org</p>
+                    <p className="text-gray-600">mamirbalouch@gmail.com</p>
+                    <p className="text-gray-600">mamirbalouch@yahoo.com</p>
                   </div>
                 </div>
 
@@ -154,11 +156,8 @@ export function Contact() {
             </CardHeader>
             <CardContent>
               <div className="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                  <p className="text-gray-600">Interactive map would be embedded here</p>
-                  <p className="text-sm text-gray-500">123 Foundation Street, Karachi, Pakistan</p>
-                </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d586.5770773588764!2d66.95822213708577!3d24.914968157276906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3155994381a03%3A0x1cdd440f95c5453b!2sAl%20haq%20Khidmat%20foundation!5e0!3m2!1sen!2s!4v1754657526361!5m2!1sen!2s" 
+                  width="100%" height="450"  loading="lazy" ></iframe>
               </div>
             </CardContent>
           </Card>

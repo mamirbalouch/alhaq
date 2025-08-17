@@ -8,11 +8,26 @@ export function About() {
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
+                    <div className="flex justify-center gap-6 mt-8">
+            <img 
+              src="/flood_bunair_1.jpeg" 
+              alt="Foundation volunteers in action" 
+              className="rounded-lg shadow-md w-140 h-auto"
+            />
+            <img 
+              src="/flood_bunair_2.jpeg" 
+              alt="Community support event" 
+              className="rounded-lg shadow-md w-140 h-auto"
+            />
+          </div>
+          <br className="my-8 border-t border-gray-300" />
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Al-Haq Khidmat Foundation</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Established with the vision of creating a just and compassionate society, Al-Haq Khidmat Foundation 
             is committed to serving humanity regardless of race, religion, or social status.
           </p>
+
+
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
@@ -50,7 +65,7 @@ We strive to uplift lives through practical support, driven by the principles of
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Card className="text-center p-6 hover:shadow-lg transition-shadow">
             <CardContent className="pt-6">
-              <Utensils className="h-12 w-12 text-orange-500 mx-auto mb-4" />
+              <Utensils className="h-20 w-20 text-orange-500 mx-auto mb-4" />
               <h4 className="text-xl font-semibold mb-2">Food Support</h4>
               <p className="text-gray-600">
                 Discounted essential food items for families in need
@@ -60,7 +75,7 @@ We strive to uplift lives through practical support, driven by the principles of
 
           <Card className="text-center p-6 hover:shadow-lg transition-shadow">
             <CardContent className="pt-6">
-              <Heart className="h-12 w-12 text-red-500 mx-auto mb-4" />
+              <Heart className="h-20 w-20 text-red-500 mx-auto mb-4" />
               <h4 className="text-xl font-semibold mb-2">Medical Care</h4>
               <p className="text-gray-600">
                 Medical center and discounted medicines for healthcare access
@@ -70,7 +85,7 @@ We strive to uplift lives through practical support, driven by the principles of
 
           <Card className="text-center p-6 hover:shadow-lg transition-shadow">
             <CardContent className="pt-6">
-              <Users className="h-12 w-12 text-blue-500 mx-auto mb-4" />
+              <Users className="h-20 w-20 text-blue-500 mx-auto mb-4" />
               <h4 className="text-xl font-semibold mb-2">Disaster Relief</h4>
               <p className="text-gray-600">
                 Emergency support for flood and earthquake victims
@@ -80,7 +95,7 @@ We strive to uplift lives through practical support, driven by the principles of
 
           <Card className="text-center p-6 hover:shadow-lg transition-shadow">
             <CardContent className="pt-6">
-              <Building className="h-12 w-12 text-green-500 mx-auto mb-4" />
+              <Building className="h-20 w-20 text-green-500 mx-auto mb-4" />
               <h4 className="text-xl font-semibold mb-2">Community Support</h4>
               <p className="text-gray-600">
                 Reaching vulnerable communities across Pakistan

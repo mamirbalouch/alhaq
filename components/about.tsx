@@ -20,6 +20,14 @@ export function About() {
               className="rounded-lg shadow-md w-140 h-auto"
             />
           </div>
+          <div className="flex flex-col items-center mt-8">
+  <h3 className="text-2xl font-bold mb-4">BONAIR SITUATION</h3>
+  <video
+    src="/flood_bunair_video1.mp4"
+    controls
+    className="rounded-lg shadow-md w-full max-w-2xl"
+  />
+</div>
           <br className="my-8 border-t border-gray-300" />
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Al-Haq Khidmat Foundation</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
